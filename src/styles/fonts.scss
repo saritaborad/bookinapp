@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?subset_id=2&fvd=n5&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?subset_id=2&fvd=n5&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?subset_id=2&fvd=n5&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("https://use.typekit.net/af/1eb35a/000000000000000000010090/27/l?subset_id=2&fvd=i5&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/1eb35a/000000000000000000010090/27/d?subset_id=2&fvd=i5&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/1eb35a/000000000000000000010090/27/a?subset_id=2&fvd=i5&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("https://use.typekit.net/af/eb729a/000000000000000000010092/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/eb729a/000000000000000000010092/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/eb729a/000000000000000000010092/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+// @font-face {
+//   font-family: "Futura PT condensed";
+//   src: url("https://use.typekit.net/af/6f8764/000000000000000000012039/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+//       format("woff2"),
+//     url("https://use.typekit.net/af/6f8764/000000000000000000012039/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+//       format("woff"),
+//     url("https://use.typekit.net/af/6f8764/000000000000000000012039/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+//       format("opentype");
+//   font-display: swap;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-stretch: normal;
+// }
+
+// @font-face {
+//   font-family: "Futura PT condensed";
+//   src: url("https://use.typekit.net/af/082b7c/00000000000000000001203a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+//       format("woff2"),
+//     url("https://use.typekit.net/af/082b7c/00000000000000000001203a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+//       format("woff"),
+//     url("https://use.typekit.net/af/082b7c/00000000000000000001203a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+//       format("opentype");
+//   font-display: swap;
+//   font-style: italic;
+//   font-weight: 400;
+//   font-stretch: normal;
+// }
+
+// @font-face {
+//   font-family: "Futura PT condensed";
+//   src: url("https://use.typekit.net/af/accb3b/00000000000000000001203b/27/l?subset_id=2&fvd=n5&v=3")
+//       format("woff2"),
+//     url("https://use.typekit.net/af/accb3b/00000000000000000001203b/27/d?subset_id=2&fvd=n5&v=3")
+//       format("woff"),
+//     url("https://use.typekit.net/af/accb3b/00000000000000000001203b/27/a?subset_id=2&fvd=n5&v=3")
+//       format("opentype");
+//   font-display: swap;
+//   font-style: normal;
+//   font-weight: 500;
+//   font-stretch: normal;
+// }
+
+// @font-face {
+//   font-family: "Futura PT condensed";
+//   src: url("https://use.typekit.net/af/c9ec0c/00000000000000000001203c/27/l?subset_id=2&fvd=i5&v=3")
+//       format("woff2"),
+//     url("https://use.typekit.net/af/c9ec0c/00000000000000000001203c/27/d?subset_id=2&fvd=i5&v=3")
+//       format("woff"),
+//     url("https://use.typekit.net/af/c9ec0c/00000000000000000001203c/27/a?subset_id=2&fvd=i5&v=3")
+//       format("opentype");
+//   font-display: swap;
+//   font-style: italic;
+//   font-weight: 500;
+//   font-stretch: normal;
+// }
+
+// @font-face {
+// font-family:"Futura PT condensed";
+// src:url("https://use.typekit.net/af/64e0cf/00000000000000000001203d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/64e0cf/00000000000000000001203d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/64e0cf/00000000000000000001203d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+// font-display:swap;font-style:normal;font-weight:700;font-stretch:normal;
+// }
+
+// @font-face {
+// font-family:"Futura PT condensed";
+// src:url("https://use.typekit.net/af/e6a9c1/00000000000000000001203e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/e6a9c1/00000000000000000001203e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/e6a9c1/00000000000000000001203e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+// font-display:swap;font-style:italic;font-weight:700;font-stretch:normal;
+// }
+
+// @font-face {
+//   font-family: "Futura PTRU";
+//   src: url("./../assets/fonts/ParaType-FuturaPTBook.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("./../assets/fonts/ParaType-FuturaPTBook.otf") format("opentype"),
+//     url("./../assets/fonts/ParaType-FuturaPTBook.woff") format("woff"),
+//     url("./../assets/fonts/ParaType-FuturaPTBook.ttf") format("truetype"),
+//     url("./../assets/fonts/ParaType-FuturaPTBook.svg#ParaType-FuturaPTBook")
+//       format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "Lato";
+  src: url("./../assets/fonts/Lato-Light.eot") format("embedded-opentype"),
+    url("./../assets/fonts/Lato-Light.otf") format("opentype"),
+    url("./../assets/fonts/Lato-Light.woff") format("woff"),
+    url("./../assets/fonts/Lato-Light.ttf") format("truetype"),
+    url("./../assets/fonts/Lato-Light.svg") format("svg");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./../assets/fonts/Lato-Regular.eot") format("embedded-opentype"),
+    url("./../assets/fonts/Lato-Regular.otf") format("opentype"),
+    url("./../assets/fonts/Lato-Regular.woff") format("woff"),
+    url("./../assets/fonts/Lato-Regular.ttf") format("truetype"),
+    url("./../assets/fonts/Lato-Regular.svg") format("svg");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./../assets/fonts/Lato-Bold.eot") format("embedded-opentype"),
+    url("./../assets/fonts/Lato-Bold.otf") format("opentype"),
+    url("./../assets/fonts/Lato-Bold.woff") format("woff"),
+    url("./../assets/fonts/Lato-Bold.ttf") format("truetype"),
+    url("./../assets/fonts/Lato-Bold.svg") format("svg");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}

@@ -1,0 +1,268 @@
+@import "../../styles/variables.scss";
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+.home-container {
+  background-image: url("../../assets/frank_porter_homes.jpg");
+  background-position: bottom right;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 4.5rem 6.5rem;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-screen-max) {
+    background-image: url("../../assets/mobile-background.jpg");
+    min-height: max(100vh, 740px);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+    .fp-logo {
+      max-width: 43rem;
+      width:43rem;
+      height: 6rem;
+      margin-right: 1rem;
+      filter: invert(1);
+      margin-top: -1.4rem;
+
+      @media (max-width: $mobile-screen-max-lower-resolution) {
+        width: calc(100vw - 40px);
+        max-width: unset;
+      }
+
+      @media (max-width: 695px) {
+        margin-top: -1.2rem;
+      }
+    }
+
+    .top-submenu {
+      min-width: 10rem;
+      justify-content: flex-end;
+      flex: 1;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .welcome-box {
+    color: #000000;
+    width: 97rem;
+    margin-left: 7%;
+    margin-top: 5%;
+    @media (max-width: 695px) {
+      margin-top: 4%;
+    }
+    h1 {
+      font-weight: lighter;
+      font-size: 4rem;
+
+      @media (max-width: $mobile-screen-max-lower-resolution) {
+        font-size: 28px !important;
+      }
+    }
+
+    .buttons {
+      margin: -2rem 0;
+    }
+
+    .button {
+      text-transform: uppercase;
+      outline: none;
+      color: white;
+      cursor: pointer;
+      margin: 2rem 0;
+
+      &:first-child {
+        margin-right: 2.5rem;
+      }
+    }
+
+    .city-button {
+      height: 8.5rem;
+      font-size: 3.3rem;
+      padding: 18px;
+      min-width: 42.5rem;
+      border: none;
+      background-color: $main-color;
+      display: inline-block;
+      text-align: center;
+      transition: all 0.5s ease;
+      letter-spacing: normal;
+      font-weight: 450;
+      border-radius: 5px;
+
+      @media (min-width: 1801px) {
+        padding: 22px;
+      }
+
+      .ico {
+        width: 6rem;
+        height: 6rem;
+        margin: -1.7rem 2rem -1.7rem 0;
+      }
+
+      &:hover {
+        background: $main-color-dark;
+      }
+    }
+
+    .read-more-button {
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 1px solid $main-color;
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: "Lato";
+      padding: 2.5rem 4rem;
+      height: 6.5rem;
+      color: $main-color;
+      width: 33rem;
+      line-height: 1.6rem;
+      transition: all 0.5s ease;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        border-color: $main-color-dark;
+        color: $main-color-dark;
+      }
+    }
+
+    .welcome-desc {
+      margin: 3rem 0px;
+      font-weight: 450;
+      line-height: 165%;
+      font-size: 2rem;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .bottom-desc {
+      margin: 18vh 0px 0;
+      font-size: 1.8rem;
+      font-weight: 450;
+      color: $main-color;
+      width: 36rem;
+
+      @media (max-width: $mobile-screen-max) {
+        margin: 7rem 0px 0;
+      }
+    }
+
+    @media (max-width: $mobile-screen-max-lower-resolution) {
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .fp-logo {
+      width: 29rem;
+    }
+
+    .welcome-box {
+      margin-left: 0;
+      width: 100%;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      .city-button {
+        font-size: 3rem;
+
+        .ico {
+          width: 5.5rem;
+          height: 5.5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .header {
+      .top-submenu {
+        justify-content: space-between;
+      }
+    }
+
+    .welcome-box {
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    padding: 2.5rem;
+
+    .welcome-box {
+      .city-button {
+        font-size: 3rem;
+        min-width: auto;
+        width: 100%;
+      }
+
+      .bottom-desc,
+      .welcome-desc {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .bottom-desc {
+        margin-top: 7rem;
+      }
+
+      .read-more-button {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-screen-max) {
+    .bottom-decor::after {
+      font-size: 8rem;
+      background-color: transparent;
+      bottom: -1.9rem;
+    }
+  }
+}
+
+
+.arabic-home-container {
+  direction: rtl;
+  background-image: unset !important;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../assets/frank_porter_homes.jpg");
+    background-position: bottom right;
+    background-size: cover;
+    transform: scaleX(-1);
+    z-index: -1;
+  }
+
+  @media (max-width: $mobile-screen-max) {
+    background-image: url("../../assets/mobile-background.jpg") !important;
+    min-height: max(100vh, 740px);
+  }
+
+  .welcome-box {
+    .button:first-child {
+      margin-right: unset;
+      margin-left: 2.5rem;
+    }
+
+    .city-button .ico {
+      margin: -1.7rem 0rem -1.7rem 2rem;
+    }
+  }
+}

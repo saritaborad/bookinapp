@@ -1,0 +1,74 @@
+@import "variables.scss";
+
+.DateInput_input {
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 700;
+  border-bottom: none;
+  padding: 0 10px 0 18px;
+  border-radius: 5px;
+
+  @media (max-width: $mobile-screen-max) {
+    font-size: 14px;
+  }
+}
+
+.DateRangePicker_picker {
+  z-index: 3;
+}
+
+.DateRangePickerInput__withBorder {
+  border-radius: 0;
+  border: none;
+}
+
+.DateRangePickerInput_arrow {
+  width: 0.1rem;
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  z-index: 1;
+  background: $main-color;
+
+  .DateRangePickerInput_arrow_svg {
+    display: none;
+  }
+}
+
+.DateInput {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.DayPickerKeyboardShortcuts_buttonReset {
+  display: none;
+}
+
+.DateInput_input__focused {
+  border-bottom: none;
+}
+
+.CalendarDay__selected_span,
+.CalendarDay__hovered_span {
+  background-color: rgba($main-color, 0.6);
+  border-color: rgba($main-color, 0.2);
+  color: white;
+
+  &:hover {
+    color: white;
+    background-color: rgba($main-color, 0.7);
+    border-color: rgba($main-color, 0.2);
+  }
+}
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+  background-color: $main-color;
+  border-color: rgba($main-color, 0.2);
+}
+
+.DateRangePickerInput_clearDates_default:focus,
+.DateRangePickerInput_clearDates_default:hover {
+  background-color: transparent;
+  border-radius: 0;
+}

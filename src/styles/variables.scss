@@ -1,0 +1,18 @@
+$mobile-screen-min: 992px;
+$mobile-screen-max: $mobile-screen-min + 1px;
+$mobile-screen-max-lower-resolution: 500px;
+$mobile-screen-min-lower-resolution: calc($mobile-screen-max-lower-resolution + 1px);
+
+
+$main-color-dark: #6D5232;
+$main-color: #8D7252;;
+$main-color-light: #BC9D78;
+$secondary-color: #f6f6f6;
+$card-background: #EEECEA;
+$gray-color: #DADDDE;
+$accent-color-1: #6395AD;
+$accent-color-2: #79A5BB;
+$primary-text-color: #7c7c7c;
+$secondary-text-color: #707070;
+$validation-text-color: #da0403;
+$black-color: #202020;

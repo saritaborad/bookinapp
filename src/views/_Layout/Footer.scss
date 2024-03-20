@@ -1,0 +1,129 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background-color: $card-background;
+  border-top: 1px solid $gray-color;
+  margin: 0 -6rem -1.5rem;
+  color: $secondary-text-color;
+  padding: 1.5rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (max-width: 1400px) {
+    padding: 1.5rem 4rem;
+    margin: 0 -4rem -1.5rem;
+  }
+
+  @media (max-width: $mobile-screen-max) {
+    margin: 2rem -2rem -1.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: $secondary-text-color;
+  }
+
+  ul {
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 1.5rem 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .address {
+    font-size: 1.4rem;
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .input-container {
+    margin: 1.5rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid $main-color;
+    }
+  }
+
+  .columns-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div {
+      flex: 0 0 50%;
+
+      @media (max-width: 600px) {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  .footer-menu2 {
+    flex: 1;
+
+    @media (max-width: 600px) {
+      flex: 0 0 100%;
+    }
+    .left-decor {
+      margin-left: 3rem;
+
+      > * {
+        margin: .5rem 1rem 0;
+      }
+    }
+
+    .phoneNumber {
+      margin-left: 1rem;
+    }
+  }
+
+  .social-media {
+    margin-left: 2.8rem;
+    margin-right: -1rem;
+
+    @media (max-width: 600px) {
+      margin-top: 3rem;
+    }
+
+    .ico {
+      position: relative;
+      background-color: $main-color;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      margin: 0 1rem;
+
+      &::before {
+        content: "";
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        mask-size: 60%;
+        mask-position: center;
+        mask-repeat: no-repeat;
+      }
+    }
+
+    .ico-facebook::before {
+      mask-size: 40%;
+    }
+  }
+}

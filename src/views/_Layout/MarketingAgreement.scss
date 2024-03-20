@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.marketing-agreement-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $card-background;
+  border-top: 1px solid $secondary-text-color;
+  padding: 2rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  flex-wrap: wrap;
+  z-index: 100;
+  gap: 20px;
+
+  @media (max-width: $mobile-screen-max) {
+    padding: 2rem 2rem;
+  }
+
+  &.hidden {
+    display: none;
+  }
+
+  .buttons {
+    button {
+      margin: 0 1rem;
+      padding: 1rem 3rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.arabic-marketing-agreement-container {
+  .buttons {
+    button {
+      &:first-child {
+        margin-left: 1rem !important;
+        margin-right: 0 !important;
+      }
+
+      &:last-child {
+        margin-right: 1rem !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
+}

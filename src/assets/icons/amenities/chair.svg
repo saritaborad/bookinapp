@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>chair</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="chair" stroke="#58595B">
+            <g id="Page-1" transform="translate(11.000000, 5.000000)">
+                <g id="Group-5" transform="translate(1.000000, 14.000000)">
+                    <polyline id="Stroke-1" points="1.8999 0.8999 1.8999 16.4999 0.4999 16.4999 0.4999 1.3999"></polyline>
+                    <polyline id="Stroke-3" points="16.9004 1.3999 16.9004 16.4999 15.5004 16.4999 15.5004 0.8999"></polyline>
+                </g>
+                <path d="M3.3999,7.7998 L3.3999,12.4998" id="Stroke-6"></path>
+                <path d="M16,7.7998 L16,12.4998" id="Stroke-7"></path>
+                <g id="Group-14">
+                    <path d="M18.9004,14.3999 C18.9004,14.6999 18.7004,14.8999 18.4004,14.8999 L1.0004,14.8999 C0.7004,14.8999 0.5004,14.6999 0.5004,14.3999 L0.5004,12.9999 C0.5004,12.6999 0.7004,12.4999 1.0004,12.4999 L18.4004,12.4999 C18.7004,12.4999 18.9004,12.6999 18.9004,12.9999 L18.9004,14.3999 Z" id="Stroke-8"></path>
+                    <path d="M17.4004,5.7998 C17.4004,6.8998 16.5004,7.6998 15.5004,7.6998 L3.9004,7.6998 C2.7994,7.7998 2.0004,6.8998 2.0004,5.7998 L2.0004,2.3998 C2.0004,1.2998 2.9004,0.4998 3.9004,0.4998 L15.5004,0.4998 C16.5994,0.4998 17.4004,1.3998 17.4004,2.3998 L17.4004,5.7998 Z" id="Stroke-10"></path>
+                    <path d="M2.8999,18.2998 L16.4999,18.2998" id="Stroke-12"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

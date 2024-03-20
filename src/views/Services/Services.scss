@@ -1,0 +1,59 @@
+@import "../../styles/variables.scss";
+
+.services-container {
+  text-align: center;
+
+  .services-image {
+    background-image: url("../../assets/background-frank-porter-services.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    margin: 2rem -6rem 0;
+    background-size: cover;
+  }
+
+  .header {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 3rem;
+    margin-top: 30px;
+  }
+
+  .url-box {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
+  .description {
+    line-height: 200%;
+    font-size: 1.5rem;
+	
+    a {
+      color: $main-color;
+    }
+  }
+
+  .amenities {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 70rem;
+    align-items: center;
+
+    .amenity {
+      margin: 3rem 5rem;
+      width: 13rem;
+      font-size: 1.5rem;
+
+      img {
+        width: 8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>oven</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 29 22.379 29 22.379 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="oven">
+            <g id="Page-1" transform="translate(9.000000, 6.000000)">
+                <polygon id="Stroke-1" stroke="#58595B" points="0.69 28.5 21.69 28.5 21.69 5.8 0.69 5.8"></polygon>
+                <polygon id="Stroke-3" stroke="#58595B" points="2.99 21.5 19.19 21.5 19.19 12.5 2.99 12.5"></polygon>
+                <g id="Group-15">
+                    <path d="M0.6899,24.0996 L21.6899,24.0996 L0.6899,24.0996 Z" id="Stroke-4" stroke="#58595B"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-7"></g>
+                    <polygon id="Stroke-6" stroke="#58595B" mask="url(#mask-2)" points="0.69 10.1 21.69 10.1 21.69 5.8 0.69 5.8"></polygon>
+                    <path d="M4.5898,7.7998 C4.8658,7.7998 5.0898,8.0238 5.0898,8.2998 C5.0898,8.5758 4.8658,8.7998 4.5898,8.7998 C4.3138,8.7998 4.0898,8.5758 4.0898,8.2998 C4.0898,8.0238 4.3138,7.7998 4.5898,7.7998 Z" id="Stroke-8" stroke="#58595B" mask="url(#mask-2)"></path>
+                    <path d="M8.8896,7.7998 C9.1656,7.7998 9.3896,8.0238 9.3896,8.2998 C9.3896,8.5758 9.1656,8.7998 8.8896,8.7998 C8.6136,8.7998 8.3896,8.5758 8.3896,8.2998 C8.3896,8.0238 8.6136,7.7998 8.8896,7.7998 Z" id="Stroke-9" stroke="#58595B" mask="url(#mask-2)"></path>
+                    <path d="M13.2895,7.7998 C13.5655,7.7998 13.7895,8.0238 13.7895,8.2998 C13.7895,8.5758 13.5655,8.7998 13.2895,8.7998 C13.0135,8.7998 12.7895,8.5758 12.7895,8.2998 C12.7895,8.0238 13.0135,7.7998 13.2895,7.7998 Z" id="Stroke-10" stroke="#58595B" mask="url(#mask-2)"></path>
+                    <path d="M17.6899,7.7998 C17.9659,7.7998 18.1899,8.0238 18.1899,8.2998 C18.1899,8.5758 17.9659,8.7998 17.6899,8.7998 C17.4139,8.7998 17.1899,8.5758 17.1899,8.2998 C17.1899,8.0238 17.4139,7.7998 17.6899,7.7998 Z" id="Stroke-11" stroke="#58595B" mask="url(#mask-2)"></path>
+                    <polygon id="Stroke-12" stroke="#58595B" mask="url(#mask-2)" points="19.8901 0.5 2.4901 0.5 0.6901 6 21.6901 6"></polygon>
+                    <path d="M4.5898,15.2002 L17.3898,15.2002" id="Stroke-13" stroke="#58595B" mask="url(#mask-2)"></path>
+                    <path d="M4.5898,18.5 L17.3898,18.5" id="Stroke-14" stroke="#58595B" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

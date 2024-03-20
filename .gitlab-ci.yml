@@ -1,0 +1,161 @@
+build_dev:
+    image: node:10
+    stage: build
+    tags:
+        - frankporter-aws
+    script:
+        - cat $ENV > .env
+        - cat .env
+        - npm install --progress=false
+        - npm run build
+        - mv build build-$KEY
+    environment:
+        name: develop
+    except:
+        - master
+    artifacts:
+        expire_in: 1 week
+        paths:
+            - build-$KEY
+    cache:
+        key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+        paths:
+            - node_modules/
+    parallel:
+        matrix:
+            -   ENV: $ENV_FILE
+                KEY: UAE
+            # - ENV: $ENV_FILE_RU
+            #   KEY: RU
+
+deploy_dev:
+    image: alpine
+    stage: deploy
+    tags:
+        - docker
+        - shared
+    environment:
+        name: develop
+    only:
+        - develop
+        - cicd
+    script:
+        - apk add aws-cli
+        #- export S3_BUCKET=fpbooking-old.${CI_ENVIRONMENT_SLUG}.frankporter.euvic.cloud
+        - aws s3 rm --recursive s3://${S3_BUCKET}
+        - aws s3 sync build-${KEY}/ s3://${S3_BUCKET} --cache-control max-age=10800
+        - export CLOUDFRONT_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[*].{id:Id,origin:Origins.Items[0].Id}[?origin=='${S3_BUCKET}'].id" --output text)
+        - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_ID --paths '/*'
+    cache:
+        key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+        paths:
+            - node_modules/
+    parallel:
+        matrix:
+            -   S3_BUCKET: fpbooking-old.${CI_ENVIRONMENT_SLUG}.frankporter.euvic.cloud
+                KEY: UAE
+        # - S3_BUCKET: fpbooking-ru-old.${CI_ENVIRONMENT_SLUG}.frankporter.euvic.cloud
+        #   KEY: RU
+
+build_prod:
+    image: node:10
+    stage: build
+    tags:
+        - docker
+        - shared
+    script:
+        - cat $ENV > .env
+        - cat .env
+        - npm install --progress=false
+        - npm run build
+        - mv build build-$KEY
+    environment:
+        name: prod
+    only:
+        - master
+    artifacts:
+        expire_in: 1 week
+        paths:
+            - build-$KEY
+    cache:
+        key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+        paths:
+            - node_modules/
+    parallel:
+        matrix:
+            -   ENV: $ENV_FILE
+                KEY: UAE
+            # - ENV: $ENV_FILE_RU
+            #   KEY: RU
+
+deploy_prod:
+    image: alpine
+    stage: deploy
+    tags:
+        - docker
+        - shared
+    environment:
+        name: prod
+    only:
+        - master
+    script:
+        - apk add aws-cli
+        - aws s3 rm --recursive s3://${S3_BUCKET}
+        - aws s3 sync build-${KEY}/ s3://${S3_BUCKET} --cache-control max-age=10800
+        - export CLOUDFRONT_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[*].{id:Id,origin:Origins.Items[0].Id}[?origin=='${S3_BUCKET}'].id" --output text)
+        - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_ID --paths '/*'
+    cache:
+        key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+        paths:
+            - node_modules/
+    parallel:
+        matrix:
+            -   S3_BUCKET: fpbooking-old.${CI_ENVIRONMENT_SLUG}.frankporter.euvic.cloud
+                KEY: UAE
+        # - S3_BUCKET: fpbooking-ru-old.${CI_ENVIRONMENT_SLUG}.frankporter.euvic.cloud
+        #   KEY: RU
+
+
+        # build_oldprod:
+        #   image: node:10
+        #   stage: build
+        #   tags:
+        #     - docker
+        #     - shared
+        #   script:
+        #     - echo $ENV_FILE > .env
+        #     - cat .env
+        #     - npm install --progress=false
+        #     - npm run build
+        #   environment:
+        #     name: oldprod
+        #   only:
+        #     - master
+        #   artifacts:
+        #     expire_in: 1 week
+        #     paths:
+        #       - build
+        #   cache:
+        #     key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+        #     paths:
+        #     - node_modules/
+
+        # deploy_oldprod:
+        #   environment: oldprod
+        #   stage: deploy
+        #   image: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest # see the note below
+        #   script:
+        #     - aws s3 sync build/ s3://frankporter-portal-booking-preprod-thebucket-1fbs7ui1ockv/  --cache-control max-age=10800 --delete
+        #     - aws cloudfront create-invalidation --distribution-id EOVXNCCARJHXX --paths '/*'
+        #   tags:
+        #     - docker
+        #   only:
+        #     - master
+
+        #old way of deploying to dev - for reference
+        #- apk add --no-cache rsync openssh
+        #- mkdir -p ~/.ssh
+        #- echo "$FP_SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
+        #- chmod 600 ~/.ssh/id_dsa
+        #- echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+        #- rsync -rav --delete build/ fpbooking@fpbooking.dev.euvic.pl:/home/fpbooking/public_html/

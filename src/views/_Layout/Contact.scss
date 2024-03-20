@@ -1,0 +1,210 @@
+@import "../../styles/variables.scss";
+
+.contact-popup {
+  .contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sent-email {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.popup.contact-popup {
+  top: 12%;
+  max-width: 600px;
+
+  @media (max-width: $mobile-screen-max) {
+    max-width: 480px;
+  }
+
+  @media (max-width: $mobile-screen-max-lower-resolution) {
+    margin: auto 5%;
+  }
+
+  .contact-form {
+    @media (max-width: $mobile-screen-max) {
+      flex: 0 0 100%;
+    }
+
+    .input-container {
+      margin: 0 0 1rem 0;
+      height: 6rem;
+      width: 49.2%;
+
+      @media (max-width: $mobile-screen-max-lower-resolution) {
+        width: 100%;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      input {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ced4da;
+        text-transform: none;
+      }
+    }
+
+    .contact-me {
+      color: black;
+      font-size: 40px;
+      margin-top: 1rem;
+      margin-bottom: 0;
+
+      @media (max-width: $mobile-screen-max) {
+        font-size: 32px;
+      }
+
+      @media (max-width: $mobile-screen-max-lower-resolution) {
+        font-size: 24px;
+      }
+    }
+
+    .contact-text {
+      font-size: 15px;
+      font-family: "Lato";
+      margin: 10px 0 20px;
+
+      @media (max-width: $mobile-screen-max) {
+        font-size: 14px;
+      }
+    }
+
+    .dropdown-container .dropdown li {
+      text-transform: none;
+      padding-left: 12px;
+
+      @media (max-width: $mobile-screen-max-lower-resolution) {
+        font-size: 14px;
+      }
+    }
+
+    .textarea-container {
+      @media (max-width: 600px) {
+        margin-top: 1rem;
+        padding-left: 0;
+      }
+
+      textarea {
+        width: 100%;
+        height: 15.1rem;
+        resize: none;
+        border: 1px solid #ced4da;
+        padding: 1.5rem 12px;
+      }
+
+      button {
+        width: 35%;
+        padding: 10px 0;
+        margin: 1rem 0 0 auto;
+        min-width: 145px;
+
+        .loader {
+          display: none;
+          margin-top: -15px;
+          color: white;
+          transform: scale(0.2);
+          margin-left: 3rem;
+        }
+
+        &.loading {
+          .loader {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .columns-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2%;
+      flex-direction: column;
+
+      > div {
+        flex: 0 0 49.4%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+
+        @media (max-width: 600px) {
+          flex: 0 0 100%;
+          height: 15rem;
+          margin-bottom: 0;
+
+          .input-container:last-child {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      .first-column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media (max-width: $mobile-screen-max-lower-resolution) {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+      }
+    }
+
+    .email-sent {
+      margin-top: 0.5rem;
+    }
+
+    .sending-email-error {
+      margin-top: 0.5rem;
+      font-size: 1.7rem;
+    }
+
+    .dropdown-container {
+      width: 100%;
+      height: 6.1rem;
+      display: flex;
+      border: 1px solid #ced4da;
+      padding-right: 10px;
+
+      .dropdown-triangle {
+        position: relative;
+        background-color: white;
+        border-radius: 5px;
+        padding: 2rem 1rem;
+        width: 4rem;
+
+        &::after {
+          display: block;
+          position: relative;
+          top: 0.5rem;
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      .dropdown-input {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 0 0 0 12px;
+        text-transform: none;
+
+        &::placeholder {
+          text-transform: none;
+        }
+      }
+
+      .text-cursor {
+        cursor: text;
+      }
+    }
+  }
+}

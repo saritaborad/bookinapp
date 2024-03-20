@@ -1,0 +1,481 @@
+@import "../../styles/variables.scss";
+
+.booking-details-container {
+  margin: 2rem -6rem 0;
+  border-top: 1px solid $primary-text-color;
+
+  @media (max-width: $mobile-screen-max) {
+    margin: 2rem -2rem 0;
+  }
+
+  .property-description {
+    padding: 2rem rem 1rem;
+  }
+
+  .property-description .property-name {
+    color: $main-color;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-weight: lighter;
+  }
+
+  .property-info {
+    padding-right: 2rem;
+  }
+
+  .details-summary-row.bottom-decor {
+    margin-bottom: 4rem;
+
+    &::before {
+      bottom: -3rem;
+    }
+
+    &::after {
+      bottom: -3.3rem;
+    }
+  }
+
+  .DateRangePickerInput {
+    width: 70%;
+    border-radius: 5px;
+
+    @media (max-width: $mobile-screen-max-lower-resolution) {
+      width: 100%;
+    }
+
+    .DateInput_input {
+      @media (min-width: $mobile-screen-min) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .plus-minus-container {
+    width: 70%;
+
+    @media (max-width: $mobile-screen-max-lower-resolution) {
+      width: 100%;
+    }
+
+    .plus-minus-label {
+      @media (min-width: $mobile-screen-min) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.booking-basic-info {
+  display: flex;
+  flex-wrap: wrap;
+
+  .gallery-container {
+    width: 40vw;
+    min-width: 700px;
+
+    .gallery {
+      height: calc((max(40vw, 700px)) / 1.5 + 15.7rem);
+    }
+
+    @media (max-width: 1200px) {
+      min-width: 500px;
+
+      .gallery {
+        height: calc((max(40vw, 500px)) / 1.5 + 15.7rem);
+      }
+    }
+  }
+
+  .booking-reservation {
+    flex: 1;
+    background-color: $card-background;
+    padding: 4rem 5.5rem;
+    display: flex;
+
+    .booking-reservation-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 4rem 2.5rem;
+    }
+  }
+
+  @media (max-width: $mobile-screen-max) {
+    .gallery-container {
+      width: 100%;
+      min-width: auto;
+
+      .gallery {
+        height: calc(100vw / 1.5 + 15.7rem);
+      }
+    }
+
+    .booking-reservation {
+      flex: 0 0 100%;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.details-header {
+  font-weight: 500;
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+.property-general-info-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.bottom-decor::before {
+    left: 9rem;
+    right: 5rem;
+  }
+
+  &.bottom-decor,
+  .bottom-decor {
+    margin-bottom: 6rem;
+
+    &::before {
+      bottom: -4rem;
+    }
+
+    &::after {
+      background-color: #fff;
+      bottom: -4.2rem;
+    }
+  }
+
+  .flex-col {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+
+    .col-2 {
+      flex: 0 0 50%;
+
+      &:first-child {
+        padding-right: 1.5rem;
+      }
+
+      &:last-child {
+        padding-left: 1.5rem;
+      }
+
+      @media (max-width: $mobile-screen-max) {
+        flex: 0 0 100%;
+
+        &:first-child {
+          padding-right: 0;
+        }
+
+        &:last-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .details-subheader {
+    font-weight: 500;
+    margin: 2rem 0 0;
+    font-size: 2.1rem;
+  }
+
+  .values {
+    line-height: 2.8rem;
+    font-size: 1.9rem;
+  }
+
+  .property-general-info {
+    width: 40vw;
+    min-width: 700px;
+    padding: 6rem 2rem 0 6rem;
+
+    @media (max-width: 1200px) {
+      min-width: 500px;
+    }
+    
+    @media (max-width: $mobile-screen-max) {
+      padding: 6rem 0rem 0 2rem;
+    }
+  }
+
+  .property-name {
+    color: $main-color;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-weight: lighter;
+  }
+
+  .property-location {
+    flex: 1;
+
+    .search-map {
+      position: relative;
+      width: 100%;
+      height: 90vh;
+
+      @media (max-width: $mobile-screen-max) {
+        width: auto;
+        margin: 2rem -3rem 0;
+      }
+    }
+  }
+
+  .description {
+    line-height: 2.8rem;
+    font-size: 2rem;
+    white-space: pre-wrap;
+  }
+
+  .icon-container {
+    font-weight: 500;
+    margin: 0 3rem 2rem;
+    text-align: center;
+
+    @media (max-width: $mobile-screen-max) {
+      margin: 0 2rem 2rem;
+    }
+
+    span {
+      font-size: 1.9rem;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .icon {
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      margin: 0 auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 1rem;
+    }
+
+    .icon-guest {
+      background-image: url("../../assets/icons/guest.svg");
+    }
+    .icon-room {
+      background-image: url("../../assets/icons/room.svg");
+    }
+    .icon-bed {
+      background-image: url("../../assets/icons/beds.svg");
+    }
+    .icon-bathroom {
+      background-image: url("../../assets/icons/bathroom.svg");
+    }
+  }
+
+  @media (max-width: $mobile-screen-max) {
+    padding: 3rem;
+
+    .property-general-info {
+      flex: 0 0 100%;
+      padding: 0;
+      min-width: auto;
+    }
+
+    .property-location {
+      flex: 0 0 100%;
+    }
+
+    &.bottom-decor::before {
+      left: 3rem;
+      right: 3rem;
+    }
+  }
+
+  .property-basic-info-icons {
+    display: flex;
+  }
+}
+
+.amenities-row {
+  padding: 2rem 5rem 4rem 9rem;
+
+  .amenities-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5rem 0 -6rem;
+
+    .amenity {
+      margin: 0 6rem 2rem;
+      flex: 0 0 10rem;
+      text-align: center;
+
+      img {
+        display: block;
+        height: 6rem;
+        margin: 0 auto;
+      }
+
+      span {
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-screen-max) {
+    padding: 3rem;
+
+    .amenities-list {
+      margin: 0 -3rem;
+
+      .amenity {
+        margin: 0 4rem 2rem;
+      }
+    }
+  }
+}
+
+.property-details {
+  .show-more-button {
+    color: $main-color;
+    background-color: transparent;
+    border: 1px solid $main-color;
+    padding: 0 4rem;
+    display: block;
+  }
+}
+
+.arabic-booking-details-container {
+  .property-description {
+    .property-name {
+      padding-right: unset;
+      direction: ltr;
+      text-align: right;
+    }
+
+    .property-info {
+      padding-right: unset;
+    }
+
+    .sum-switch {
+      text-align: left;
+
+      .per-night {
+        margin-left: unset;
+      }
+    }
+  }
+
+  .property-general-info-row {
+    .icon-container:first-child {
+      margin-left: unset;
+      margin-right: 0;
+    }
+    .description {
+      direction: ltr;
+      text-align: right;
+      display: block;
+    }
+
+    .arabic-description {
+      direction: rtl;
+    }
+
+    .property-name {
+      direction: ltr;
+      text-align: right;
+    }
+
+    &.bottom-decor::before {
+      left: 5rem;
+      right: 9rem;
+    }
+    
+    .property-general-info {
+      padding: 6rem 6rem 0 2rem;
+
+      @media (max-width: $mobile-screen-max) {
+        padding: 6rem 0rem 0 2rem;
+      }
+    }
+
+    .flex-col {
+      .col-2:first-child {
+        padding-right: unset;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+
+  .plus-minus-container {
+    .plus-minus-label {
+      padding: 0.8rem 1rem 0.8rem 0;
+    }
+
+    .plus-minus-value {
+      &::after {
+        right: unset;
+        left: 11.5rem;
+      }
+
+      &::before {
+        right: unset;
+        left: 5rem;
+      }
+
+      .plus-minus-input {
+        text-align: left;
+        padding: 0 3rem 0 7.7rem;
+      }
+
+      .minus {
+        left: 12.5rem;
+        right: unset;
+      }
+
+      .plus {
+        left: 1rem;
+        right: unset;
+      }
+      
+    }
+  } 
+
+  .amenities-row {
+    padding: 2rem 9rem 4rem 5rem;
+  }
+
+  .DateRangePickerInput {
+    padding-right: unset;
+  }
+
+  .DateRangePicker_picker {
+    direction: ltr !important;
+  }
+
+  .DateInput_fang {
+    right: 22px;
+    left: unset;
+  }
+
+  .DateRangePicker_picker__directionLeft {
+    left: unset !important;
+    right: 0 !important;
+
+    @media (max-width:1400px){
+      right: -50% !important;
+    }
+    @media (max-width:993px){
+      right: 0% !important;
+    }
+    @media (max-width:360px){
+      right: -30% !important;
+    }
+  }
+
+}

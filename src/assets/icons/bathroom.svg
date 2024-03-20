@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="58.663" height="50.469" viewBox="0 0 58.663 50.469">
+  <g id="bathroom" transform="translate(1 1)">
+    <path id="Path_153" data-name="Path 153" d="M301.318,153H289v2.464s3.7,1.026,3.7,3.7v6.159a6.16,6.16,0,0,0,6.159,6.159h36.954a6.16,6.16,0,0,0,6.159-6.159v-6.159c0-2.669,3.7-3.7,3.7-3.7V153H313.636" transform="translate(-289 -127.132)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_53" data-name="Line 53" x1="1" y2="5" transform="translate(9 44.272)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_54" data-name="Line 54" x2="1" y2="5" transform="translate(47 44.272)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <rect id="Rectangle_132" data-name="Rectangle 132" width="13" height="15" transform="translate(12 22.272)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_55" data-name="Line 55" x1="5" transform="translate(39 7.272)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_154" data-name="Path 154" d="M323,139.391v-2.464A4.927,4.927,0,0,1,327.927,132h1.232a4.927,4.927,0,0,1,4.927,4.927v20.941" transform="translate(-281.118 -132)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_56" data-name="Line 56" y2="4" transform="translate(44 11.272)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_57" data-name="Line 57" y2="4" transform="translate(39 11.272)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_58" data-name="Line 58" y2="4" transform="translate(42 17.272)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_59" data-name="Line 59" y2="4" transform="translate(37 17.272)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_60" data-name="Line 60" y2="4" transform="translate(47 17.272)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

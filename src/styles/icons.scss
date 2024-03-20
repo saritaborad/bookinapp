@@ -1,0 +1,39 @@
+@import "variables.scss";
+
+.ico {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: white;
+  mask-size: contain;
+
+  &.ico-twitter::before {
+    mask-image: url("../assets/icons/twitter-brands.svg");
+  }
+  &.ico-instagram::before {
+    mask-image: url("../assets/icons/instagram-brands.svg");
+  }
+  &.ico-facebook::before {
+    mask-image: url("../assets/icons/facebook-f-brands.svg");
+  }
+
+  &.ico-dubai{
+    mask-image: url("../assets/icons/dubai.svg");
+  }
+
+  &.ico-abudhabi{
+    mask-image: url("../assets/icons/abudhabi.svg");
+  }
+  &.ico-st-petersburg{
+    mask-image: url("../assets/icons/petersburg.svg");
+  }
+  &.ico-left{
+    mask-image: url("../assets/left-arrow.svg");
+  }
+  &.ico-right{
+    mask-image: url("../assets/right-arrow.svg");
+  }
+}

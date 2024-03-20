@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>doorman</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.918 21.565 0.918 21.565 22 0 22"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Listing-Expand" transform="translate(-918.000000, -1843.000000)">
+            <g id="amenities" transform="translate(288.000000, 1406.000000)">
+                <g id="doorman" transform="translate(630.000000, 437.000000)">
+                    <rect id="11" fill="#FFFFFF" x="0" y="0" width="40" height="40"></rect>
+                    <path d="M24.5901,14.2448 L24.5901,18.4528 C24.5901,20.1988 23.1731,21.6128 21.4291,21.6128 L18.1351,21.6128 C16.3931,21.6128 14.9751,20.1988 14.9751,18.4528 L14.9751,14.2448" id="Stroke-1" stroke="#464646" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M16.1269,21.0733 L16.1269,22.0833 C16.1269,23.1713 15.2429,24.0533 14.1529,24.0533" id="Stroke-3" stroke="#464646" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M23.4373,21.0733 L23.4373,22.0833 C23.4373,23.1713 24.3213,24.0533 25.4113,24.0533" id="Stroke-5" stroke="#464646" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M9.5,29 L9.5,26.405 C9.5,25.106 10.553,24.053 11.851,24.053" id="Stroke-7" stroke="#464646"></path>
+                    <g id="Group-11" transform="translate(9.000000, 7.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-10"></g>
+                        <path d="M0.8454,21.4976 L21.1574,21.4976" id="Stroke-9" stroke="#464646" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M14.2562,24.0532 L11.8512,24.0532" id="Stroke-12" stroke="#464646"></path>
+                    <path d="M30.0652,29 L30.0652,26.405 C30.0652,25.106 29.0122,24.053 27.7142,24.053" id="Stroke-14" stroke="#464646"></path>
+                    <path d="M25.309,24.0532 L27.714,24.0532" id="Stroke-16" stroke="#464646"></path>
+                    <path d="M15.8956,23.0827 L19.7836,24.5067" id="Stroke-18" stroke="#464646" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Stroke-20" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" points="23.6715 23.0827 19.7835 24.5067 19.7835 28.4977"></polyline>
+                    <path d="M17.5285,16.6844 L18.1155,16.6844" id="Stroke-22" stroke="#464646" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.4483,16.6844 L22.0383,16.6844" id="Stroke-24" stroke="#464646" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19.7821,8.4183 C17.0211,8.4183 14.7821,9.3613 14.7821,10.5243 L14.7821,13.7253 C14.7821,14.3293 17.0211,14.8203 19.7821,14.8203 C22.5431,14.8203 24.7821,14.3293 24.7821,13.7253 L24.7821,10.5243 C24.7821,9.3613 22.5431,8.4183 19.7821,8.4183 L19.7821,8.4183 Z" id="Stroke-26" stroke="#464646"></path>
+                    <path d="M24.8117,11.7439 C24.5227,12.3589 22.3967,12.8399 19.7797,12.8399 C17.1657,12.8399 15.0347,12.3589 14.7477,11.7439" id="Stroke-28" stroke="#464646" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

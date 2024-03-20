@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="41" viewBox="0 0 48 41">
+  <g id="room" transform="translate(1 1)">
+    <path id="Path_148" data-name="Path 148" d="M289,85.023A4.982,4.982,0,0,1,294,80V51a4.963,4.963,0,0,0-5,5Z" transform="translate(-289 -51)" fill="none" stroke="#505050" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_149" data-name="Path 149" d="M294,57h41V90H294.022A5.049,5.049,0,0,1,289,85" transform="translate(-289 -51)" fill="none" stroke="#505050" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_150" data-name="Path 150" d="M312,70v8H301V63h11v4" transform="translate(-289 -51)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_151" data-name="Path 151" d="M312,63h16V73h-4" transform="translate(-289 -51)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_152" data-name="Path 152" d="M320,73h4V84H308V78" transform="translate(-289 -51)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_52" data-name="Line 52" x1="5" transform="translate(23 22)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

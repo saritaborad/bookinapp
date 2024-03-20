@@ -1,0 +1,242 @@
+@import "../../styles/variables.scss";
+
+.terms-condition-popup {
+  font-size: 1.8rem;
+
+  .terms-and-condition-star {
+    font-size: 1.5rem;
+  }
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid $secondary-text-color;
+  margin: 2rem -6rem 0;
+  min-height: calc(100vh - 20.7rem);
+
+  .user-data {
+    flex: 0 0 60%;
+    background-color: $card-background;
+    padding: 0 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 43.3rem);
+
+    @media (max-width: $mobile-screen-max) {
+      padding: rem 2.5rem 2rem;
+      min-height: auto;
+    }
+
+    .guest-details-container,
+    .billing-details-container {
+      max-width: 80rem;
+    }
+
+    .guest-details-forms {
+      display: flex;
+      flex-wrap: wrap;
+
+      > .form-group {
+        flex: 0 0 calc(50% - 1rem);
+        margin: 1rem;
+
+        input,
+        textarea,
+        .intl-tel-input {
+          width: 100%;
+        }
+
+        @media (max-width: 500px) {
+          flex: 0 0 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        &:nth-child(odd) {
+          margin-left: 0;
+        }
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+        &:last-child {
+          flex: 0 0 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      .message-input {
+        height: 16rem;
+        resize: none;
+      }
+    }
+
+    .card-details-forms {
+      display: flex;
+      flex-wrap: wrap;
+      input {
+        width: 100%;
+      }
+
+      .form-group {
+        flex: 0 0 100%;
+        margin: 1rem 0;
+      }
+    }
+  }
+  .error-message {
+    color: $validation-text-color;
+    font-size: 1.5rem;
+  }
+  .book-button {
+    padding: 0 3rem;
+    margin-top: 2rem;
+
+    .loader {
+      transform: scale(0.2);
+      color: white;
+      display: inline-block;
+      margin: 0 -1rem 0 2rem;
+    }
+  }
+
+  .booking-summary {
+    flex: 0 0 40%;
+    background-color: white;
+    padding: 0 5.5rem 4rem;
+
+    .bottom-decor::after {
+      background-color: white;
+    }
+
+    .gallery {
+      height: 30vh;
+      margin: 0 -5.5rem 2rem;
+    }
+
+    .property-name {
+      color: $main-color;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      font-weight: lighter;
+      margin: 0;
+
+      @media (max-width: $mobile-screen-max) {
+        font-size: 2.2rem;
+      }
+    }
+    .property-address {
+      color: $primary-text-color;
+      font-size: 1.8rem;
+      margin-top: 0;
+    }
+
+    .booking-reservation-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 4rem 2.5rem;
+      .gallery {
+        margin: -4rem -2.5rem 2rem;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-screen-max) {
+    margin: 2rem -2rem 0;
+    .user-data {
+      flex: 0 0 100%;
+    }
+    .booking-summary {
+      flex: 0 0 100%;
+    }
+  }
+
+  .card-element {
+    height: 4rem;
+    padding: 1.1rem 2.5rem;
+    width: 100%;
+    color: $primary-text-color;
+    background-color: white;
+    border: 1px solid transparent;
+
+    .ElementsApp,
+    .ElementsApp .InputElement {
+      font-size: 1.5rem !important;
+      font-family: "Futura LT Pro", "Futura LT ProRU" !important;
+    }
+  }
+
+  .card-element--invalid {
+    border-color: $validation-text-color;
+  }
+
+  .card-element--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+
+  .checkboxes-box {
+    margin-top: 2rem;
+
+    .srv-validation-message {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .promo-box {
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+
+    @media (min-width: 500px) {
+      margin-right: 1rem;
+    }
+
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (min-width: 500px) {
+        flex-wrap: nowrap;
+      }
+    }
+
+    .button {
+      padding: 0 3rem;
+      background-color: transparent;
+      color: $main-color;
+      border: 1px solid $main-color;
+      line-height: 32px;
+      white-space: nowrap;
+
+      @media (min-width: 1801px) {
+        line-height: 40px;
+      }
+
+      .loader {
+        transform: scale(0.2);
+        color: $main-color;
+        display: inline-block;
+        margin: 1rem -1rem 0 2rem;
+      }
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 2rem;
+
+      @media (min-width: 500px) {
+        margin-right: 2rem;
+        width: 50%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

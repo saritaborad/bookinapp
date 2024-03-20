@@ -1,0 +1,64 @@
+@import "./styles/variables.scss";
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.75);
+  z-index: 10;
+}
+
+.popup {
+  z-index: 10;
+  position: fixed;
+  background: #ffffff;
+  padding: 2rem;
+  max-width: 75rem;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+
+  &.hidden {
+    display: none;
+  }
+
+  .close-modal {
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 2.7rem;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    color: #868e96;
+  }
+}
+
+.swal-modal {
+  border-radius: 0;
+
+  .swal-button {
+    background: $main-color;
+    border-radius: 0;
+    font-weight: normal;
+    height: 40px;
+
+    &:hover {
+      background: rgba($main-color, 0.8);
+    }
+  }
+}
+
+.arabic-properties-modal {
+  .swal-text {
+    direction: rtl;
+    text-align: right;
+  }
+
+  .swal-footer {
+    text-align: left;
+  }
+}

@@ -1,0 +1,143 @@
+@import "../../styles/variables.scss";
+
+.top-submenu {
+  display: flex;
+  align-items: center;
+
+  .ico-link:first-child {
+    margin-left: 0;
+  }
+  .ico-link:last-child {
+    margin-right: 0;
+  }
+
+  &.reversed {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &.main-color {
+    color: $main-color;
+
+    .language-selector {
+      color: $main-color;
+    }
+    .triangle-selector {
+      border-color: $main-color transparent transparent transparent !important;
+    }
+
+    .ico {
+      background-color: $main-color;
+      &::before {
+        background-color: white;
+      }
+    }
+  }
+
+  .language-selector {
+    display: inline-block;
+  }
+
+  .spacer {
+    width: 7rem;
+  }
+
+  .ico-link{
+    margin: 0 1.5rem;
+  }
+
+  .ico {
+    position: relative;
+    background-color: #000000;
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      mask-size: 60%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+    }
+  }
+
+  .ico-facebook::before {
+    mask-size: 40%;
+  }
+
+  .language-block{
+    position: relative;
+  }
+
+  .languages-list-content {
+    z-index: 101;
+    position: absolute;
+    box-shadow: 0 0 0 1px rgba(68,68,68,.11);
+    top: .5rem;
+    right: -10px;
+    width: 50px;
+
+    ul {
+      list-style: none;
+      width: 100%;
+      margin: .5rem 0;
+      padding: 0;
+      background: white;
+      color: $main-color;
+    }
+
+    li {
+      padding: .7rem 0 .7rem 0;
+      cursor: pointer;
+      user-select: none;
+      text-align: center;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  .language-selector {
+    color: $main-color;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0 1rem;
+
+    .triangle-selector {
+      margin-left: 1rem;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: .6rem .5rem 0 .5rem;
+      border-color: $main-color transparent transparent transparent;
+      transition: ease-in-out transform 200ms;
+      margin-bottom: 1px;
+
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.arabic-top-submenu {
+  .language-selector {
+    .triangle-selector {
+      margin-left: unset !important;
+      margin-right: 1rem !important ;
+    }
+  }
+
+  .languages-list-content {
+    left: -10px;
+  }
+}

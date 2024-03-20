@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="44.545" viewBox="0 0 50 44.545">
+  <g id="bed" transform="translate(1 1)">
+    <path id="Path_143" data-name="Path 143" d="M210,75V93.545h3.272l2.182-3.273h37.091l2.182,3.273H258V75Z" transform="translate(-210 -51)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_144" data-name="Path 144" d="M253.818,68.273V53H232" transform="translate(-208 -53)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_145" data-name="Path 145" d="M212,68.273V53h21.818" transform="translate(-209.818 -53)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_146" data-name="Path 146" d="M220.636,62h-4.364L213,76.182" transform="translate(-209.727 -52.182)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_147" data-name="Path 147" d="M251.636,76.182,248.364,62H244" transform="translate(-206.909 -52.182)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <rect id="Rectangle_130" data-name="Rectangle 130" width="13" height="6" rx="2" transform="translate(11 6.545)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+    <rect id="Rectangle_131" data-name="Rectangle 131" width="13" height="6" rx="2" transform="translate(24 6.545)" fill="none" stroke="#505050" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

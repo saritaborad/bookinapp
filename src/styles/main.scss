@@ -1,0 +1,147 @@
+@import "variables.scss";
+@import "icons.scss";
+@import "fonts.scss";
+@import "dates_overrides.scss";
+@import "checkbox.scss";
+
+html {
+  font-size: 10px;
+
+  @media (max-width: 1800px) {
+    font-size: 8px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  cursor: default;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.srv-validation-message {
+  color: $validation-text-color;
+  margin-top: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.property-description {
+  display: flex;
+  padding: 2rem 1rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  .property-pricing {
+    white-space: nowrap;
+  }
+
+  .property-details {
+    color: $secondary-text-color;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .property-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+    margin: 0 0 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .property-price {
+    color: $main-color;
+    font-size: 2.8rem;
+    letter-spacing: 0.05rem;
+    font-weight: lighter;
+  }
+  .property-currency {
+    color: $main-color;
+    margin-left: 0.3rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.05rem;
+    font-weight: lighter;
+  }
+
+  .sum-switch {
+    text-align: right;
+    color: $secondary-text-color;
+    font-size: 1.8rem;
+
+    * {
+      cursor: pointer;
+    }
+
+    .selected {
+      border-bottom: 0.1rem solid $secondary-text-color;
+      padding-bottom: 0.2rem;
+    }
+
+    .per-night {
+      margin-left: 1.6rem;
+    }
+  }
+}
+
+.left-decor {
+  position: relative;
+  margin-left: 0.1rem;
+
+  > * {
+    margin-left: 1.5rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    height: 100%;
+    width: 0.1rem;
+    background-color: $main-color;
+  }
+}
+.bottom-decor {
+  position: relative;
+  margin-bottom: 4rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2rem;
+    right: 0;
+    height: 0.1rem;
+    background-color: $main-color;
+  }
+}
+
+.bottom-space {
+  margin-bottom: 4rem;
+}
+
+.margin-top-20 {
+  margin-top: 2rem;
+}
+
+.arabic-right-decor {
+  &::before {
+    left: unset;
+    right: -1rem;
+  }
+}

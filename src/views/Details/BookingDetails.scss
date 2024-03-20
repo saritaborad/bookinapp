@@ -1,0 +1,114 @@
+@import "../../styles/variables.scss";
+
+.booking-details {
+  .DateRangePicker {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .DateRangePickerInput {
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .DateInput_input {
+    font-size: 12px;
+    padding-left: 8px;
+    height: 45px;
+    color: $black-color;
+
+    &::placeholder {
+      color: $main-color;
+    }
+  }
+
+  .plus-minus-container {
+    margin: 0 0 2rem;
+    height: 45px;
+
+    .plus-minus-label {
+      font-size: 12px;
+    }
+
+    .plus-minus-value {
+      .plus-minus-input {
+        height: 45px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .custom-calendar-day {
+    height: calc(100% + 0.2rem);
+    left: -0.1rem;
+    position: absolute;
+    top: -0.1rem;
+    width: calc(100% + 0.2rem);
+    background: #cacccd;
+    border: 1px solid #cacccd;
+    color: #82888a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CalendarDay {
+    position: relative;
+  }
+
+  .error-messages {
+    font-size: 14px;
+  }
+
+  .details-summary-row {
+    display: flex;
+    justify-content: space-between;
+    color: $secondary-text-color;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+
+    &.total {
+      margin-top: 1rem;
+      color: black;
+    }
+  }
+
+  .booking-details {
+    position: relative;
+  }
+
+  .loader-abs {
+    position: absolute;
+    left: calc(50% + 40px);
+  }
+
+  .read-only-data {
+    color: $secondary-text-color;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+
+    .check-in-out-label {
+      margin: 0;
+
+      &.bottom-decor {
+        margin-bottom: 4rem;
+      }
+    }
+
+    .order-details {
+      font-weight: 500;
+    }
+  }
+
+  .book-button {
+    width: 100%;
+    margin: 2rem 0;
+    font-weight: 500;
+
+    &:disabled {
+      background-color: rgba($main-color, 0.5);
+    }
+  }
+}
